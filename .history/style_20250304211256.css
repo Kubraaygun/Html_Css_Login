@@ -1,0 +1,26 @@
+body {
+  font-size: 20px;
+}
+.h1:hover {
+  background-color: purple;
+}
+#h1:hover {
+  color: purple;
+}
+.link:hover {
+  text-decoration: none;
+}
+
+ol {
+  background-color: aqua;
+}
+
+ul {
+  background-color: yellow;
+}
+
+li {
+  background-color: burlywood;
+  margin: 10px;
+  padding: 5px;
+}

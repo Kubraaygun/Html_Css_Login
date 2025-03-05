@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* vh: Tarayici penceresinin yuksekligine gore yuzde olarak boyut belirler. 1vh pencere yuksekliginin %1ine esittir */
+  background-color: antiquewhite;
+}
+
+.container {
+  width: 420px;
+  background-color: plum;
+  color: white;
+}
+
+.login {
+  font-size: 36px;
+  text-align: center;
+}
+.input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid purple;
+  border-radius: 30px;
+  font-size: 16px;
+  color: purple;
+  padding: 20px;
+}
+input:hover {
+  background-color: pink;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

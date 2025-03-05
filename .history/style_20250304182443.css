@@ -1,0 +1,39 @@
+body {
+  font-size: 20px;
+  background-color: aquamarine;
+}
+.h1:hover {
+  background-color: purple;
+}
+#h1:hover {
+  color: purple;
+}
+.link:hover {
+  text-decoration: none;
+}
+
+ol {
+  background-color: yellow;
+  border: 10px groove gray;
+}
+
+ul {
+  background-color: red;
+  margin: 60px 40px 0 60px;
+}
+
+li {
+  background-color: green;
+  margin: 10px;
+}
+
+.table {
+  border: 3px solid gray;
+}
+
+.table-header {
+  border: 3px solid gray;
+}
+.table-row {
+  border: 1px solid black;
+}

@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* vh: Tarayici penceresinin yuksekligine gore yuzde olarak boyut belirler. 1vh pencere yuksekliginin %1ine esittir */
+  background-color: antiquewhite;
+}
+
+.container {
+  width: 420px;
+  background-color: palevioletred;
+  color: white;
+  border-radius: 15px;
+}
+
+.login {
+  font-size: 36px;
+  text-align: center;
+  padding: 20px 0;
+}
+.input-box {
+  position: relative; /*Bu, elemanı normal akışta tutar ama bulunduğu yerden kaydırabilirsin.
+  Diğer öğeleri etkilemez, sadece bu öğenin konumunu değiştirmek için kullanılır. Eleman normal akışta kalır, ama konumunu kaydırmanı sağlar.*/
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid pink;
+  border-radius: 30px;
+  font-size: 16px;
+  color: purple;
+  padding: 20px;
+}
+input:hover {
+  background-color: pink;
+}
+input::placeholder {
+  color: #fff;
+}
+i {
+  position: absolute; /*Bu, elemanı normal akıştan çıkarır ve en yakın konumlandırılmış üst öğe (mesela relative, absolute vb.) göre yerleştirir. Eğer böyle bir öğe yoksa, sayfanın köşesine (body) göre yerleşir.
+ Öğeyi tam olarak istediğin yere yerleştirirsin, ama o öğe çevresindeki diğer öğelerden bağımsız olur. Elemanı normal akıştan çıkarıp, belirlediğin bir yere yerleştirir.*/
+  right: 20px;
+  padding: 14px;
+  font-size: 18px;
+}
+
+.remember-me {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin: -15px 0 15px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  accent-color: purple;
+  margin: 0 3px 0 3px;
+}
+.forgotPassword {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.button {
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.register-link {
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+.registerlink {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.registerlink:hover {
+  text-decoration: underline;
+}
+
+img {
+  position: ab;
+  top: 20px;
+}
