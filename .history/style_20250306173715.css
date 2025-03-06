@@ -52,9 +52,6 @@ input:hover {
 input::placeholder {
   color: #fff;
 }
-input:hover::placeholder {
-  color: purple;
-}
 i {
   position: absolute; /*Bu, elemanı normal akıştan çıkarır ve en yakın konumlandırılmış üst öğe (mesela relative, absolute vb.) göre yerleştirir. Eğer böyle bir öğe yoksa, sayfanın köşesine (body) göre yerleşir.
  Öğeyi tam olarak istediğin yere yerleştirirsin, ama o öğe çevresindeki diğer öğelerden bağımsız olur. Elemanı normal akıştan çıkarıp, belirlediğin bir yere yerleştirir.*/
@@ -63,7 +60,6 @@ i {
   font-size: 18px;
 }
 
-/* REMEMBER ME */
 .remember-me {
   display: flex;
   justify-content: space-between;
@@ -74,6 +70,7 @@ i {
 
 label {
   display: flex;
+  align-items: center;
 }
 
 .checkbox {
@@ -89,7 +86,7 @@ label {
 .forgotPassword:hover {
   text-decoration: underline;
 }
-/* BUTTTON */
+
 .button {
   width: 100%;
   height: 45px;
@@ -97,16 +94,12 @@ label {
   border: none;
   outline: none;
   border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
 }
-.button:hover {
-  color: purple;
-  background-color: pink;
-}
 
-/* REGISTER */
 .register {
   font-size: 15px;
   text-align: center;

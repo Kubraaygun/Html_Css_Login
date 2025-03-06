@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; //sonra
+  box-sizing: border-box;
 }
 
 body {
@@ -17,7 +17,9 @@ body {
 .container {
   width: 420px;
   background: transparent;
+  border: 2px solid rgba(255, 255, 255, 2);
   color: white;
+  border-radius: 15px;
   padding: 30px 40px; // sonra ver
 }
 
@@ -44,16 +46,13 @@ input {
   border-radius: 30px;
   font-size: 16px;
   color: purple;
-  padding: 20px;
+  padding: 20px 45px 20px 20px;
 }
 input:hover {
   background-color: pink;
 }
 input::placeholder {
   color: #fff;
-}
-input:hover::placeholder {
-  color: purple;
 }
 i {
   position: absolute; /*Bu, elemanı normal akıştan çıkarır ve en yakın konumlandırılmış üst öğe (mesela relative, absolute vb.) göre yerleştirir. Eğer böyle bir öğe yoksa, sayfanın köşesine (body) göre yerleşir.
@@ -63,7 +62,6 @@ i {
   font-size: 18px;
 }
 
-/* REMEMBER ME */
 .remember-me {
   display: flex;
   justify-content: space-between;
@@ -74,6 +72,7 @@ i {
 
 label {
   display: flex;
+  align-items: center;
 }
 
 .checkbox {
@@ -89,7 +88,7 @@ label {
 .forgotPassword:hover {
   text-decoration: underline;
 }
-/* BUTTTON */
+
 .button {
   width: 100%;
   height: 45px;
@@ -97,17 +96,13 @@ label {
   border: none;
   outline: none;
   border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
 }
-.button:hover {
-  color: purple;
-  background-color: pink;
-}
 
-/* REGISTER */
-.register {
+.register-link {
   font-size: 15px;
   text-align: center;
   margin: 20px 0 15px;

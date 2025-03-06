@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; //sonra
+  box-sizing: border-box;
 }
 
 body {
@@ -18,6 +18,7 @@ body {
   width: 420px;
   background: transparent;
   color: white;
+  border-radius: 15px;
   padding: 30px 40px; // sonra ver
 }
 
@@ -52,9 +53,6 @@ input:hover {
 input::placeholder {
   color: #fff;
 }
-input:hover::placeholder {
-  color: purple;
-}
 i {
   position: absolute; /*Bu, elemanı normal akıştan çıkarır ve en yakın konumlandırılmış üst öğe (mesela relative, absolute vb.) göre yerleştirir. Eğer böyle bir öğe yoksa, sayfanın köşesine (body) göre yerleşir.
  Öğeyi tam olarak istediğin yere yerleştirirsin, ama o öğe çevresindeki diğer öğelerden bağımsız olur. Elemanı normal akıştan çıkarıp, belirlediğin bir yere yerleştirir.*/
@@ -63,17 +61,15 @@ i {
   font-size: 18px;
 }
 
-/* REMEMBER ME */
 .remember-me {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
-  white-space: nowrap;
   margin: -15px 0 15px;
 }
-
 label {
   display: flex;
+  align-items: center;
 }
 
 .checkbox {
@@ -89,7 +85,7 @@ label {
 .forgotPassword:hover {
   text-decoration: underline;
 }
-/* BUTTTON */
+
 .button {
   width: 100%;
   height: 45px;
@@ -97,17 +93,13 @@ label {
   border: none;
   outline: none;
   border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
 }
-.button:hover {
-  color: purple;
-  background-color: pink;
-}
 
-/* REGISTER */
-.register {
+.register-link {
   font-size: 15px;
   text-align: center;
   margin: 20px 0 15px;

@@ -52,9 +52,6 @@ input:hover {
 input::placeholder {
   color: #fff;
 }
-input:hover::placeholder {
-  color: purple;
-}
 i {
   position: absolute; /*Bu, elemanı normal akıştan çıkarır ve en yakın konumlandırılmış üst öğe (mesela relative, absolute vb.) göre yerleştirir. Eğer böyle bir öğe yoksa, sayfanın köşesine (body) göre yerleşir.
  Öğeyi tam olarak istediğin yere yerleştirirsin, ama o öğe çevresindeki diğer öğelerden bağımsız olur. Elemanı normal akıştan çıkarıp, belirlediğin bir yere yerleştirir.*/
@@ -97,13 +94,10 @@ label {
   border: none;
   outline: none;
   border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-}
-.button:hover {
-  color: purple;
-  background-color: pink;
 }
 
 /* REGISTER */
